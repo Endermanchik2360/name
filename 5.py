@@ -46,7 +46,7 @@ class MainPage(ft.Container):
             text_raw_result.value = f'Monthly Pay: {raw_result}'
             text_ndfl.value = f'NDFL {ndfl}'
             text_final_result.value = f'Total: {float(raw_result) - float(ndfl)}'
-            print('Monthly Pay:', text_raw_result.value)
+            print(text_raw_result.value)
             self.update()
 
         def get_monthly_pay(hourly_salary, time_spent):
